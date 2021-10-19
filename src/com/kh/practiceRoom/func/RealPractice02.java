@@ -97,21 +97,28 @@ public class RealPractice02 {
 	// 4번 답
 	public void method4() {
 		double result;
-
+//		char ch2; 
 		Scanner sc = new Scanner(System.in);
 
 
 		System.out.print("피연산자1 입력 : ");
-		double num1 = sc.nextDouble();
+		int num1 = sc.nextInt();
+//		double num1 = sc.nextDouble();
+//		정수로 받으라고 했다!
 		System.out.print("피연산자2 입력 : ");
-		double num2 = sc.nextDouble();
+		int num2 = sc.nextInt();
+//		double num2 = sc.nextDouble();
+//		정수로 받으라고 했다!!
 		System.out.print("연산자를 입력(+,-,*,/,%)");
 		char ch1 = sc.next().charAt(0);
+//		String s = sc.nextLine();
+//		char ch1 = s.charAt(0);
 //		char ch1 = ch2.charAt(0);
 //		char ch3 = ch2.charAt(1);
 
 		if((0 < num1 && 0 < num2) && (ch1 == '+' || ch1 == '-' || ch1 == '*' || ch1 == '/' || ch1 == '%')) {
-
+//			= ((0 > num1) || (0 > num2)) || (ch1 != '+' ||ch1 != '-' ||ch1 != '*' ||ch1 != '/' ||ch1 != '/%')
+//			System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다"); 이넘이 일로 들거야함 그럼 중첩 if 빼고
 			if(ch1 == '+') {
 				result = (num1 + num2);
 
@@ -125,7 +132,7 @@ public class RealPractice02 {
 				result =(num1 % num2);
 			}
 			System.out.println(num1 + " " + ch1 + " " +num2 + " = " + result);
-
+			
 		}else
 		System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다");
 
@@ -152,25 +159,4 @@ public class RealPractice02 {
 //			}
 //		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
