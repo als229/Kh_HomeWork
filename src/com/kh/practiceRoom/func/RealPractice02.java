@@ -135,7 +135,6 @@ public class RealPractice02 {
 			
 		}else
 		System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다");
-
 //			switch(ch1) {
 //			case '+' : 
 //				System.out.println(num1 + " " + ch1 + " " +num2 + " = " + (num1 + num2));
@@ -158,5 +157,6 @@ public class RealPractice02 {
 //				break;
 //			}
 //		}
+		
 	}
 }
