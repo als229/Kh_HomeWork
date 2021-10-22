@@ -24,6 +24,7 @@ public class Run {
 		
 //		c.maxMin();
 //		c.lotto();
-//		c.seplling();
+//		c.splling();
+		c.method();
 	}
 }

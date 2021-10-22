@@ -26,6 +26,7 @@ public class RealPractice05 {
 		for(int j = 0; j < arr.length; j++) {  // 0부터 9까지 돌릴 i 조건식
 			if(max < arr[j]) max = arr[j];  // max보다 크면 max 에 담아진다
 			if(min > arr[j]) min = arr[j];  // min 보다 작으면 min에 담아진다
+		//	=> else if 로도 가능 !!
 		}
 		System.out.println(Arrays.toString(arr));  //배열 뽑기
 		System.out.println("최대값 : " + max); //최대값 뽑기
@@ -53,7 +54,7 @@ public class RealPractice05 {
 		
 		for(int i = 0; i < ballNum.length; i++) { // 0 ~ 44 까지 나오는 i 조건식
 			ballNum[i] = (int)(Math.random()*45)+1; // 6개짜리 배열인 ballNum에 렌덤값 입력!
-			for(int j = 0; j < i; j++){ // 중복제거를 해주기 위한 코드! 
+			for(int j = 1; j < i; j++){ // 중복제거를 해주기 위한 코드! 
 				if(ballNum[i] == ballNum[j]) { // 두개가 같으면 내려감
 					i--; // i를 하나 빼주고 
 					break; // break 로 나가서 다시 숫자 하나를 뽑게 한다!
@@ -80,7 +81,7 @@ public class RealPractice05 {
 	
 	
 	// 3번 답 2시간 반
-	public void seplling() {   //중복 스팰링을 지우는 메서드
+	public void splling() {   //중복 스팰링을 지우는 메서드
 		int count = 0;  // 빈공간 숫자를 넣은 count
 		String str = "";  // 빈공간을 뺀 char 들을 담을 String
 		
@@ -114,8 +115,9 @@ public class RealPractice05 {
 			answer[i] = str.charAt(i);  // answer 배열에 str의 글자들을 다시 담았다.
 		}
 		
-		
+		System.out.println("문자열 : " + text);
 		System.out.println(Arrays.toString(answer)); // answer 출력
+		System.out.println("문자 개수 : " + answer.length  )  ;
 	}
 	/*
 	 * 
@@ -126,4 +128,31 @@ public class RealPractice05 {
 	 *
 	 */
 	
+	
+	//3번 선생님 답
+
+	public void method() {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("문자열 > ");
+		String str = sc.next();
+
+		String result = "문자열에 있는 문자 : " + str.charAt(0) + " ";
+		int count = str.length();   // 입력받은 문자열의 길이에서 중복된 문자의 갯수를 뺀 값
+
+		// i 부터 문자열의 길이까지
+		for(int i = 1; i <= str.length() -1 ; i++) {
+			// 반복문으로 charAt(i) 번째 인덱스와 charAt(j)번째 인덱스까지 비교
+			for(int j = 0; j <= i-1; j++) {
+				if(str.charAt(i) == str.charAt(j)) {
+					count--;
+					break;
+				}else if(str.charAt(i) != str.charAt(j) && j == i-1) {
+					result += str.charAt(i) + " ";
+				}
+			}
+		}
+		System.out.println(result);
+		System.out.println("중복되지 않은 글자수 : " + count );
+	}
 }
