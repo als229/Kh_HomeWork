@@ -6,10 +6,10 @@ public class Practice06 {
 		
 		public static void main(String[] args) {
 			
-//			spellingExplorer();
+			spellingExplorer();
 //			arrayPlus();
 //			chickenOder();
-			star();
+//			star();
 		}
 		
 		
@@ -28,26 +28,27 @@ public class Practice06 {
 			String point = "";
 			
 			Scanner sc = new Scanner(System.in);
+			
 			System.out.print("입력하고 싶은 단어를 입력하세용 ^^ : ");
 			String text = sc.next();
+			
 			System.out.print("찾고싶은 스펠링을 입력하세용 ^^ : ");
 			char ch = sc.next().charAt(0);
+			
 			char [] word = new char[text.length()];
 			
-			
-			for(int i = 0; i <= word.length-1; i++) {
+			for(int i = 0; i <= word.length - 1; i++) {
 				word[i] = text.charAt(i);
 				if(ch == word[i]) {
 					count += 1;
 					point += i + " ";
 				}
 			}
+			
 			System.out.println("문자열 : " + text);
 			System.out.println("찾으신 스펠링 : " + ch);
 			System.out.println(ch + "가 존재하는 위치(인덱스) : " + point);
 			System.out.println(ch + "의 갯수 : " + count);
-			
-			
 		}
 	
 		public static void  arrayPlus() {
@@ -83,7 +84,7 @@ public class Practice06 {
 			System.out.println("총 합 : " + sum);
 		}
 		
-		
+		//3번 답
 		public static void chickenOder() {
 //		3번 문제
 //		사용자가 입력한 값이 배열에 있는지 검색하여
@@ -120,6 +121,7 @@ public class Practice06 {
 //		**
 //		*
 		
+		//4번 답
 		public static void star() {
 			
 			Scanner sc = new Scanner(System.in);

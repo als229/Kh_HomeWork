@@ -153,6 +153,6 @@ public class RealPractice05 {
 			}
 		}
 		System.out.println(result);
-		System.out.println("중복되지 않은 글자수 : " + count );
+		System.out.println("중복되지 않은 글자수 : " + count);
 	}
 }
