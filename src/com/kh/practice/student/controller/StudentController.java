@@ -1,6 +1,6 @@
 package com.kh.practice.student.controller;
 
-import com.kh.practice.studnet.model.vo.Student;
+import com.kh.practice.student.model.vo.Student;
 
 public class StudentController {
 	public static final int CUT_LINE = 60;
