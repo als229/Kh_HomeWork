@@ -24,6 +24,7 @@ public class PointMenu {
 			}else if(input == 2){
 				rectangleMenu();
 			}else if(input == 9) {
+				System.out.println("종료합니다");
 				return;
 			}
 		}
