@@ -1,8 +1,8 @@
-package com.kh.funnygame;
+package com.kh.funnyCalcGame;
 
 import java.util.Scanner;
 
-public class FunnyGame {
+public class FunnyCalcGame {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
